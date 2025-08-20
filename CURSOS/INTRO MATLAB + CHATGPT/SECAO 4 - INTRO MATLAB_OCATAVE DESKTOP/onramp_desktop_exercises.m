@@ -38,12 +38,15 @@
 2:2:6
 
 # Sequencia nova:
--1:1
+(2:2:6) / 2 - 2
 
 % convert the sequence [-1 0 1] into [10 100 1000]
 
 # Sequencia original:
 -1:1
+
+# Sequencia nova:
+10.^((-1:1) + 2)
 
 # Sequencia nova 1, utilizando pot^encias:
 10.^[1 2 3]
@@ -54,7 +57,7 @@ logspace(1,3,3)
 % convert the sequence 1:9 into [1 1 1 2 2 2 3 3 3]
 
 # Sequencia original:
-1:9
+ceil((1:9) / 3)
 
 # Sequencia nova:
 repelem(1:3,3) #repelem() <- repita elementos
@@ -76,7 +79,47 @@ repelem(1:3,3) #repelem() <- repita elementos
 #D.
 (-4 + 2^3 - 0.48) / (3^2.2 * 17.3)
 
-% 2.
+% 2. Utilizar o operador de dois pontos para criar as seguintes sequencias
+# A. [1 2 3 4]
+1:4
+
+# B. [-4 -3.5 -3 -2.5 -2]
+-4:0.5:-2
+
+# C. [10 20 30 40 50 60 70]
+10:10:70
+
+# D. [-4 15 34 53]
+-4:19:53
+
+# E. [100 91 82 73 64 55 46]
+100:-9:46
+
+# F. [0 5 10 15 20]
+0:5:20
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
